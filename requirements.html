@@ -66,13 +66,392 @@
             <div class="container-fluid">
                 <div class="row">
 					<div class ="jumbotron">
-						<h1>Textbook Resale Application</h1>
+						<h1>Requirements</h1>
 						<p>A project for SENG 310 Spring 2017</p>
 					</div>
                     <div class="col-lg-12">
-                        <h2>Introduction</h2>
-                        <p>The Textbook Resale project’s goal is to provide a reliable, easy service to UVic students that allows them to buy and sell textbooks for their courses. Currently, students are using services such as Facebook, UsedVictoria, and Craigslist to buy and sell their used textbooks. None of these services provide all of the features that students want: the most impactful of which is the ability to search for textbooks by course. Using a similar model as existing services, but combining only the best of each, the Textbook Resale project aims to give students the best service and experience of buying and selling used textbooks.</p>
-                        <p></p>
+                        <h2>Requirements</h2>
+
+						<table class="table table-bordered table-striped">
+						<thead>
+						
+						<thead>
+						<tbody>
+						<tr>
+						<td colspan="2" width="624">
+						<p>Requirement # 1: User can create a new listing</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Description</p>
+						</td>
+						<td width="505">
+						<p>The user can create a new listing. The system must then share this listing with other users.</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Rationale</p>
+						</td>
+						<td width="505">
+						<p>This is a core functionality - failure to share the listing would mean that no one would see it.</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Fit Criterion</p>
+						</td>
+						<td width="505">
+						<p>The listing should be visible to other users once it has been submitted.</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Scenario</p>
+						</td>
+						<td width="505">
+						<p>A user wants to sell their book. They use the application to make a listing and share it with other users.</p>
+						</td>
+						</tr>
+						</tbody>
+						</table>
+						<p>&nbsp;</p>
+						<table class="table table-bordered table-striped">
+						<tbody>
+						<tr>
+						<td colspan="2" width="624">
+						<p>Requirement # 2: User can browse listings</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Description</p>
+						</td>
+						<td width="505">
+						<p>The user can look through existing listings. The system should have some form of filtering so that the user can narrow their search.</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Rationale</p>
+						</td>
+						<td width="505">
+						<p>The user needs to be able to see what books are available.</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Fit Criterion</p>
+						</td>
+						<td width="505">
+						<p>The system shall allow users to view all existing listings.</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Scenario</p>
+						</td>
+						<td width="505">
+						<p>Joshua wants to buy a textbook for their Philosophy class. They manually browse the listings, and are eventually able to locate the book that they need.</p>
+						</td>
+						</tr>
+						</tbody>
+						</table>
+						<p>&nbsp;</p>
+						<table class="table table-bordered table-striped">
+						<tbody>
+						<tr>
+						<td colspan="2" width="624">
+						<p>Requirement # 3: User can search listings</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Description</p>
+						</td>
+						<td width="505">
+						<p>The seller can attach tags to their listing in order to filter buyer&rsquo;s searches</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Rationale</p>
+						</td>
+						<td width="505">
+						<p>The buyer can have a specific criteria for the book and point of purchase, and wants to be able to find a post that suits his needs.</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Fit Criterion</p>
+						</td>
+						<td width="505">
+						<p>When the user enters search criteria, the system shall narrow the listings down and display only those books that fit the criteria.</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Scenario</p>
+						</td>
+						<td width="505">
+						<p>Ashley is looking for a SPAN 100 textbook but her price range is $50-$60. She wants the edition 3 for the textbook since the older editions are not permitted. She wants to find the textbook that fits her criteria and be able to search for these tags.</p>
+						</td>
+						</tr>
+						</tbody>
+						</table>
+						<p>&nbsp;</p>
+						<table class="table table-bordered table-striped">
+						<tbody>
+						<tr>
+						<td colspan="2" width="624">
+						<p>Requirement # 4: Buyer can contact the seller</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Description</p>
+						</td>
+						<td width="505">
+						<p>Buyer can contact the seller to discuss purchase</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Rationale</p>
+						</td>
+						<td width="505">
+						<p>In order to buy or sell a book, contact has to be made between the buyer and seller.</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Fit Criterion</p>
+						</td>
+						<td width="505">
+						<p>When the seller wants to inquire about a book, the system facilitates anonymous contact.</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Scenario</p>
+						</td>
+						<td width="505">
+						<p>Frank is interested in purchasing a CSC book that Robbie has listed. Since the posting is still open, he leaves a comment or message for Robbie, noting that he is interesting in purchasing the textbook. An Email or direct notification is sent to Robbie notifying him that his listing has been commented on.</p>
+						</td>
+						</tr>
+						</tbody>
+						</table>
+						<p>&nbsp;</p>
+						<table class="table table-bordered table-striped">
+						<tbody>
+						<tr>
+						<td colspan="2" width="624">
+						<p>Requirement # 5: Seller can update status of the sale</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Description</p>
+						</td>
+						<td width="505">
+						<p>Status bar will display &ldquo;Pending, Available, or Sold&rdquo; status for the textbook post</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Rationale</p>
+						</td>
+						<td width="505">
+						<p>This will save time for the buyer and narrow their search to available items.</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Fit Criterion</p>
+						</td>
+						<td width="505">
+						<p>Seller will update the status of the book&rsquo;s availability</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Scenario</p>
+						</td>
+						<td width="505">
+						<p>John is interested to purchase a Calculus textbook that Dan posted on the app. He wants to see if it is still available, and he doesn&rsquo;t want to waste his time messaging Dan if the book is no longer available. He is able to check the status bar, and he can see that the sale is pending. He decides to bookmark the post and keep an eye on it incase it becomes available.</p>
+						</td>
+						</tr>
+						</tbody>
+						</table>
+						<p>&nbsp;</p>
+						<table class="table table-bordered table-striped">
+						<tbody>
+						<tr>
+						<td colspan="2" width="624">
+						<p>Requirement # 6: Buyer can see the&nbsp; status of the textbook&rsquo;s availability</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Description</p>
+						</td>
+						<td width="505">
+						<p>Status bar will display &ldquo;Pending, Available, or Sold&rdquo; status for the textbook post</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Rationale</p>
+						</td>
+						<td width="505">
+						<p>This will save time for the buyer and narrow their search to available items.</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Fit Criterion</p>
+						</td>
+						<td width="505">
+						<p>Buyer will update the status of the book&rsquo;s availability</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Scenario</p>
+						</td>
+						<td width="505">
+						<p>John is interested to purchase a Calculus textbook that Dan posted on the app. He wants to see if it is still available, and he doesn&rsquo;t want to waste his time messaging Dan if the book is no longer available. He is able to check the status bar, and he can see that the sale is pending. He decides to bookmark the post and keep an eye on it incase it becomes available.</p>
+						</td>
+						</tr>
+						</tbody>
+						</table>
+						<p>&nbsp;</p>
+						<table class="table table-bordered table-striped">
+						<tbody>
+						<tr>
+						<td colspan="2" width="624">
+						<p>Requirement # 7: Commercial Users can post bulk listings</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Description</p>
+						</td>
+						<td width="505">
+						<p>Commercial sellers can make Bulk listings for their products</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Rationale</p>
+						</td>
+						<td width="505">
+						<p>This will allow for commercial users to easily show off their selection without making too many listings</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Fit Criterion</p>
+						</td>
+						<td width="505">
+						<p>When a Commercial user needs to advertise several copies of the same book, they can easily make a bulk listing</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Scenario</p>
+						</td>
+						<td width="505">
+						<p>The Local used bookstore has several copies of an ENGR textbook. Since they possess multiple copies, they set up a listing for the ENGR textbook, with a quantity tab.</p>
+						</td>
+						</tr>
+						</tbody>
+						</table>
+						<p>&nbsp;</p>
+						<table class="table table-bordered table-striped">
+						<tbody>
+						<tr>
+						<td colspan="2" width="624">
+						<p>Requirement # 8: The User can delete their listings</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Description</p>
+						</td>
+						<td width="505">
+						<p>Users can easily delete their listings if they want.</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Rationale</p>
+						</td>
+						<td width="505">
+						<p>Users that have sold their books outside of the app or found that they still need them will be able to easily take down their listing</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Fit Criterion</p>
+						</td>
+						<td width="505">
+						<p>When a User has either sold their book, or sold their books outside of the app.</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Scenario</p>
+						</td>
+						<td width="505">
+						<p>Joshua originally wanted to sell his Math 100 Textbook, but found after he posted his listing that he has to take Math 101, which requires the same textbook. He then quickly and easily deletes his listing.</p>
+						</td>
+						</tr>
+						</tbody>
+						</table>
+						<p>&nbsp;</p>
+						<table class="table table-bordered table-striped">
+						<tbody>
+						<tr>
+						<td colspan="2" width="624">
+						<p>Requirement # 9: The User can rate a Seller</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Description</p>
+						</td>
+						<td width="505">
+						<p>Buyers can post a rating on a Seller&rsquo;s profile that they have interacted with regarding a sale</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Rationale</p>
+						</td>
+						<td width="505">
+						<p>Buyers can rate their Seller out of 5 stars based on the interaction and transactional experience with the Seller.</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Fit Criterion</p>
+						</td>
+						<td width="505">
+						<p>After a Buyer has interacted with the Seller, they can indicate their experience with the sale</p>
+						</td>
+						</tr>
+						<tr>
+						<td width="119">
+						<p>Scenario</p>
+						</td>
+						<td width="505">
+						<p>After Robbie sold his CSC book to Frank, Frank decides that the whole experience with him was good, and rates Robbie 5 stars.</p>
+						</td>
+						</tr>
+						</tbody>
+						</table>
                     </div>
                 </div>
             </div>
